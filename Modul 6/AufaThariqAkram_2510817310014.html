@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPhotography - Sportcar Edition</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .page-wrapper {
+            position: relative;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .corner {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-color: #ffcc00;
+            border-style: solid;
+            z-index: 10;
+        }
+
+        .corner-tl { top: 0; left: 0; border-width: 6px 0 0 6px; }
+        .corner-tr { top: 0; right: 0; border-width: 6px 6px 0 0; }
+        .corner-bl { bottom: 0; left: 0; border-width: 0 0 6px 6px; }
+        .corner-br { bottom: 0; right: 0; border-width: 0 6px 6px 0; }
+
+        .top-section {
+            background-color: #dc3545;
+            margin: -40px -20px 40px -20px; 
+            padding: 40px 20px 40px 20px;
+            position: relative; 
+            z-index: 1; 
+        }
+
+        .custom-navbar {
+            background: linear-gradient(to bottom, #ffffff 0%, #f4f5f6 100%);
+            border-radius: 5px; 
+            padding: 10px 20px !important;
+            margin-bottom: 40px;
+        }
+
+        .navbar-brand { 
+            font-family: Georgia, serif; 
+            font-weight: bold; 
+            font-size: 1.8rem; 
+            color: #222 !important;
+        }
+
+        .nav-link { 
+            font-size: 0.75rem; 
+            letter-spacing: 2px; 
+            color: #666 !important; 
+            font-weight: 600;
+        }
+
+        .nav-item .active { 
+            border: 1px solid #ddd; 
+            border-radius: 20px; 
+            padding: 5px 20px !important; 
+            color: #222 !important;
+        }
+        
+        .hero-title { 
+            font-family: Georgia, serif; 
+            font-weight: bold; 
+            margin-bottom: 5px; 
+            color: #ffffff; 
+        }
+        .hero-subtitle { 
+            font-size: 0.75rem; 
+            letter-spacing: 3px; 
+            color: #f8f9fa; 
+            margin-top: 15px; 
+        }
+        
+        .filter-btn { 
+            border: 1px solid transparent; 
+            background: none; 
+            color: #777; 
+            font-size: 0.85rem; 
+            padding: 5px 20px; 
+            border-radius: 20px; 
+            margin: 0 5px; 
+        }
+        .filter-btn.active { border-color: #ccc; color: #333; font-weight: bold; }
+        
+        .portfolio-img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover; 
+            border-radius: 4px;
+        }
+        
+        .footer-logo { font-family: Georgia, serif; font-weight: bold; color: #222; }
+        .footer-text { font-size: 0.7rem; color: #aaa; }
+        .social-icons i { margin: 0 10px; color: #aaa; cursor: pointer; font-size: 1.1rem; }
+        .social-icons i:hover { color: #555; }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+        <div class="top-section">
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">IntraPhotography</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto align-items-center">
+                            <li class="nav-item px-2"><a class="nav-link active" href="#">HOME</a></li>
+                            <li class="nav-item px-2"><a class="nav-link" href="#">ABOUT ME</a></li>
+                            <li class="nav-item px-2"><a class="nav-link" href="#">PORTFOLIO</a></li>
+                            <li class="nav-item px-2"><a class="nav-link" href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container text-center mb-2">
+                <h2 class="hero-title">HOLA. Hello.. I Am Aufa...!</h2>
+                <h3 class="hero-title">I Travel Around The World To Get The Best Photos of Cars!</h3>
+                <p class="hero-subtitle">PREMIUM AUTOMOTIVE PHOTOGRAPHER / RED & BLACK COLLECTION</p>
+            </div>
+        </div>
+
+        <div class="container text-center mb-4">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Landscape</button>
+            <button class="filter-btn">Portrait</button>
+            <button class="filter-btn">Sportcar</button>
+        </div>
+
+        <div class="container mb-5">
+            <div class="row g-2">
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,red?random=1" class="img-fluid portfolio-img" alt="Red Sportcar"></div>
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,black?random=2" class="img-fluid portfolio-img" alt="Black Sportcar"></div>
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,red?random=3" class="img-fluid portfolio-img" alt="Red Sportcar"></div>
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,black?random=4" class="img-fluid portfolio-img" alt="Black Sportcar"></div>
+                
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,red?random=5" class="img-fluid portfolio-img" alt="Red Sportcar"></div>
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,black?random=6" class="img-fluid portfolio-img" alt="Black Sportcar"></div>
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,red?random=7" class="img-fluid portfolio-img" alt="Red Sportcar"></div>
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,black?random=8" class="img-fluid portfolio-img" alt="Black Sportcar"></div>
+
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,red?random=9" class="img-fluid portfolio-img" alt="Red Sportcar"></div>
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,black?random=10" class="img-fluid portfolio-img" alt="Black Sportcar"></div>
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,red?random=11" class="img-fluid portfolio-img" alt="Red Sportcar"></div>
+                <div class="col-md-3 col-6"><img src="https://loremflickr.com/400/300/sportscar,black?random=12" class="img-fluid portfolio-img" alt="Black Sportcar"></div>
+            </div>
+        </div>
+
+        <footer class="text-center py-4 mt-4">
+            <h4 class="footer-logo mb-0">IntraPhotography</h4>
+            <p class="footer-text mb-3">© Copyrights 2026. All Rights Reserved.</p>
+            <div class="social-icons">
+                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-behance"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat-ghost"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
